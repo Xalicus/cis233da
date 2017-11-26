@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+/*
+Final Project Step 6 - Web Dev Lvl 2
+Author:		Kevin Ward
+Date:		11/25/2017
+Filename:	styles.css
+*/
+
+/* General styles used for all elements. */
+/* Added css block display on 11/25/2017 */
+
+article, aside, figcaption, figure, 
+footer, header, main, nav, section {
+	display: block;
+}
+
+/* Added css reset defaults on 11/25/2017 */
+address, article, aside, blockquote, body, cite, div, dl, dt, dd, 
+em, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, 
+html, img, li, main, nav, nav a, ol, p, section, span, ul,table, 
+tr, td, th, col, colgroup {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	background: transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* HTML and Body styles. */
+/* Added css html, body tags on 11/4/2017 */
+
+html {
+	background: #501F3A url(img/purpspiral2.jpg) center / cover no-repeat fixed;
+	/* The background image was edited from: https://pixabay.com/en/abstract-swirl-electric-lights-718553/ */
+	font-family: "Trebuchet MS", sans-serif;
+	height: 100%;
+}
+
+body {
+	color: #14A098;
+	font-family: "Trebuchet MS", sans-serif;
+	width: 90%;
+	margin: auto;
+}
+
+/* Header and Nav styles. */
+/* Added css header, nav, a, #navicon, ul, li tags on 11/4/2017 */
+
+header {
+	font-family: "Bookman Old Style", serif;
+	padding: 1%;
+	text-shadow: rgba(51, 51, 51, 0.8) 2px 2px 5px;
+}
+
+/* Added css header #logo tag on 11/11/2017 */
+header #logo {
+	height: 100px;
+	width: 100px;
+	/* Fix positioning later. */
+}
+
+nav {
+	font-family: "Trebuchet MS", sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-shadow: rgba(51, 51, 51, 0.8) 1px 1px 5px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:link {
+	color: #EFEFEF;
+}
+
+nav a:visited {
+	color: #EFEFEF;
+}
+
+nav a:hover {
+	color: #D5DEDA;
+}
+
+a#navicon {
+	display: none;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav li {
+	display: inline;
+	padding: 0px 20px;
+}
+
+/* Section styles. */
+/* Added css section, h1 tags on 11/4/2017 */
+
+section {
+	background: url(img/circuitbottom.png) bottom right no-repeat,
+				url(img/opaqblue.png) center / cover no-repeat;
+	min-height: 400px;
+	text-align: center;
+	width: 100%;
+	margin: 3% auto;
+}
+
+section:last-of-type {
+	margin-bottom: 0px;
+}
+
+h1 {
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+/* Added css h2, h3 tags on 11/25/2017 */
+h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.1em;
+	text-align: center;
+}
+
+p {
+	font-size: 0.9em;
+	text-align: left;
+}
+
+/* Form and all other tag styles. */
+/* Added css form, fieldset, div, .rows, legend, textarea, input:focus tags on 11/25/2017 */
+form#orders {
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+form#orders > fieldset {
+	background-color: transparent; /* Fix colors later. */
+	border-radius: 25px;
+	
+	-webkit-flex: 1 1 100px;
+	flex: 1 1 100px;
+	
+	font-size: 0.9em;
+	padding: 15px;
+	margin: 0px 150px;
+}
+
+div.rows {
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	margin: 5px;
+}
+
+div.rows > * {
+	-webkit-flex: 1 1 100px;
+	flex: 1 1 100px;
+	
+	line-height: 25px;
+	margin: 5px;
+	font-size: 1.5em;
+}
+
+legend {
+	padding: 5px;
+}
+
+textarea {
+	margin-top: 10px;
+	height: 100px;
+	width: 95%;
+}
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(220, 225, 220);
+}
+
+input#name:focus:valid,
+input#street:focus:valid,
+input#city:focus:valid,
+input#state:focus:valid,
+input#zip:focus:valid,
+input#num:focus:valid,
+input#email:focus:valid {
+	background: rgb(220, 255, 220);
+}
+
+input#name:focus:invalid,
+input#street:focus:invalid,
+input#city:focus:invalid,
+input#state:focus:invalid,
+input#zip:focus:invalid,
+input#num:focus:invalid,
+input#email:focus:invalid {
+	background: rgb(255, 232, 233);
+}
+
+
+/* Form Button Styles. */
+/* Added css div#subreset, input(submit/reset) tags on 11/4/2017 */
+
+div#subreset {
+	text-align: center;
+	width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+	font-size: 1.2em;
+	padding: 5px;
+	margin: 15px;
+}
+
+
+
+
+
+/* Footer styles. */
+/* Added css footer, #headimg tags on 11/4/2017 */
+
+footer {
+	color: white;
+	text-align: center;
+	background-color: #14A098;
+	font-family: "Bookman Old Style", serif;
+	opacity: 0.8;
+	width: 100%;
+	padding: 3px 0px;
+}
+
+#headimg {
+	background: #0F292F url(img/circuitshead.jpg) center / 100% 100% no-repeat;
+	/* The background image was edited from: https://pixabay.com/en/background-circuit-grey-digital-2426328/ */
+}
+
+/* Mobile styles. */
+/* Added mobile and tablet/desktop styles on 11/25/2017 */
+
+@media only screen and (max-width: 640px) {
+	
+	header {
+		font-family: "Bookman Old Style", serif;
+		padding: 1%;
+		text-shadow: rgba(51, 51, 51, 0.8) 2px 2px 5px;
+	}
+
+	header #logo {
+		height: 50px;
+		width: 50px;
+	}
+	
+	header h1 {
+		font-size: 1.9em;
+	}
+	
+	a#navicon {
+		display: block;
+	}
+	
+	nav {
+		padding-bottom: 5px;
+	}
+	
+	nav ul {
+		display: none;
+	}
+	
+	nav ul li {
+		font-size: 0.5em;
+		line-height: 1em;
+		height: 0.9em;
+	}
+	
+	a#navicon:hover+ul, nav ul:hover {
+		display: block;
+	}
+	
+	section h1 {
+		font-size: 1.8em;
+	}
+	
+	section h2 {
+		font-size: 1.5em;
+	}
+	
+	section h3 {
+		font-size: 1.2em;
+	}
+	
+	section p {
+		font-size: 0.9em;
+	}
+	
+	form#orders > fieldset {
+		margin: 0px;
+	}
+	
+	div.rows {
+		margin: 5px;
+	}
+	
+	div.rows > * {
+		-webkit-flex: 1 1 0px;
+		flex: 1 1 0px;
+		
+		line-height: 25px;
+		margin: 1px;
+		font-size: 1.5em;
+	}
+	
+}
+
+/* Tablet and Desktop styles. */
+
+@media only screen and (min-width: 641px) {
+	
+	body nav ul {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+		-webkit-justify-content: center;
+		justify-content: center;
+	}
+	
+	body nav ul li {
+		-webkit-flex: 0 1 auto;
+		flex: 0 1 auto;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

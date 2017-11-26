@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Created page on 11/11/2017 -->
+<head>
+<!--
+Final Project Step 6 - Web Dev Lvl 2
+Author:		Kevin Ward
+Date:		11/25/2017
+Filename:	contact.html
+-->
+
+	<title>Xalicus Studios Contact Me</title><!-- Added title, charset, viewport meta info on 11/11/2017 -->
+	<meta charset="utf-8">
+	<meta name="title" content="Xalicus Studios Contact Me" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="something later on." ><!-- Added keywords, description, author, favicon on 11/11/2017 -->
+	<meta name="description" content="Kevin's Contact Me page for Xalicus Studios." >
+	<meta name="author" content="Kevin Ward" >
+	<link href="styles.css" rel="stylesheet"><!-- Added styles link on 11/11/2017 -->
+	<link rel="icon" type="image/png" href="img/favicon.png" >
+	<!-- Image from https://pixabay.com/en/processor-core-chip-computer-cpu-1773308/ -->
+
+</head>
+
+<body><!-- Added body on 11/11/2017 -->
+	<div id="headimg">
+		<header><!-- Added header, h1 on 11/11/2017 -->
+			<h1><img src="img/logo.png" alt="Xalicus Studios Logo" id="logo" /><!-- Added logo img on 11/11/2017 -->
+			<!-- fix transparancy -->
+			Xalicus Studios Contact Me</h1>
+		
+			<nav><!-- Added all navigation links on 11/11/2017 -->
+				<a id="navicon" href="#"><img src="img/navicon.png" alt="Nav Icon"></a> <!-- Saving for later on.-->
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="price.html">Pricing</a></li>
+					<li><a href="showcase.html">Showcase</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	
+	<main><!-- Added main, section, article on 11/11/2017 -->
+		<section>
+			<article>
+				<h2>Random Text for testing.</h2>
+				
+				<form id="orders" action="#" method="post"><!-- Form and all elements added 11/25/2017 -->
+					
+					<fieldset id="cxorder"><!-- fieldset 11/25/2017 -->
+						<legend>Something Witty and Charming!</legend><!-- legend 11/25/2017 -->
+						<div class="rows">
+							<label for="name">First and Last Name*</label><!-- label 11/25/2017 -->
+							<input name="cxName" id="name" type="text" placeholder="First and last name" required><!-- placeholder, required 11/25/2017 -->
+						</div>
+						<div class="rows">
+							<label for="street">Street Address</label><!-- label 11/25/2017 -->
+							<input name="cxStreet" id="street" type="text" placeholder="123 S Pivet Drive">
+						</div>
+						<div class="rows">
+							<label for="city">City</label><!-- label 11/25/2017 -->
+							<input name="cxCity" id="city" type="text" placeholder="Mesa"><!-- placeholder 11/25/2017 -->
+						</div>
+						<div class="rows">
+							<label for="state">State</label><!-- label 11/25/2017 -->
+							<input name="cxState" id="state" type="text" placeholder="AZ"><!-- placeholder 11/25/2017 -->
+						</div>
+						<div class="rows">
+							<label for="zip">Zip Code</label><!-- label 11/25/2017 -->
+							<input name="cxZip" id="zip" type="text" placeholder="00000 (-NNNN)"><!-- placeholder 11/25/2017 -->
+						</div>
+						<div class="rows">
+							<label for="num">Home/Cell Number*</label><!-- label 11/25/2017 -->
+							<input name="cxNum" id="num" type="tel" placeholder="(000) nnn-nnnn" pattern="\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required><!-- placeholder 11/25/2017 -->
+						</div>
+						<div class="rows">
+							<label for="email">Email Address*</label><!-- label 11/25/2017 -->
+							<input name="cxEmail" id="email" type="email" placeholder="username@server.com" required><!-- placeholder 11/25/2017 -->
+						</div>
+						<div class="rows">
+							<label for="hear">How did you hear about this page?
+							<br>(select all that apply here.)</label><!-- label 11/25/2017 -->
+							<select name="cxHear" id="hear" size="7" multiple>
+							<option value="net">Internet</option>
+							<option value="mouth">Word of mouth</option>
+							<option value="mag">Magazine</option>
+							<option value="news">Newspaper</option>
+							<option value="bb">Billboard</option>
+							<option value="media">Radio/TV</option>
+							<option value="other">Other</option>
+							</select>
+						</div>
+						<div class="rows">
+							<label for="int">Tell me a little about your interests.</label><!-- label 11/25/2017 -->
+							<textarea name="cxInt" id="int" placeholder="Interests here."></textarea><!-- placeholder 11/25/2017 -->
+						</div>
+					</fieldset>
+					
+					<div id="subreset">
+						<input type="submit" value="Submit Lifeforce">
+						<input type="reset" value="Cancel">
+					</div>
+					
+				</form>
+				
+			</article>
+		</section>
+		
+	</main>
+	
+	<footer><!-- Added footer on 11/11/2017 -->
+		Kevin Ward &copy; 2017 All Rights Reserved.
+	</footer>
+
+</body>
+</html>
