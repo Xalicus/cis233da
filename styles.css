@@ -134,7 +134,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	text-align: center;
 }
 
@@ -165,7 +165,7 @@ p {
 }
 
 .flex {
-	-webkit-box-flew: auto;
+	-webkit-box-flex: auto;
 	flex: auto;
 	
 	width: 200px;
@@ -198,7 +198,7 @@ figure {
 }
 
 figcaption {
-	float: center;
+	text-align: center;
 }
 
 img#kaw {
@@ -206,6 +206,28 @@ img#kaw {
 	width: 512px;
 	margin: 10px;
 }
+
+p.orderbut {
+	background: url(img/orderbutbg.png) center / cover no-repeat fixed; /* Background image used for my button added 12/2/2017 */
+	height: 200px;
+	width: 300px;
+	border: 10px double #808080; /* Border added 12/2/2017 */
+	border-radius: 25px;
+	color: #DD2FE8;
+	font-size: 4.8em;
+	margin: 10px auto;
+	padding: 3px;
+}
+
+/* Video Styles */
+/* Added css video tag on 12/2/2017 */
+
+video {
+	display: block;
+	width: 80%;
+	margin: 20px auto;
+}
+
 
 /* Form and all other tag styles. */
 /* Added css form, fieldset, div, .rows, legend, textarea, input:focus tags on 11/25/2017 */

@@ -45,15 +45,22 @@ Filename:	index.html
 				<h1>Welcome to Xalicus Studios!</h1><!-- Added h1 and p tags on 11/25/2017 -->
 				<p>Have you ever wanted a site that your users or customers would love to come back to and use all the time? Well this is the place for you! We at Xalicus Studios would like to make and maintain, your perfect website for the right price. Whether it be oldies style, or a sleek ultra-modern look, we have the right styles for you. We also have affordable packages to add to each site, for all your needs, like video and audio creation, text content creation and creating pictures for your website. Just order on the contact page, or click the button below.
 				</p><!-- Added the text and order button on 12/2/2017 -->
-				<a href="contact.html"><img src="order.png" alt="Order Now Button" id="orderbut"></a>
+				<a href="contact.html" class="orderbut"><p class="orderbut">Order Now!!</p></a>
 			</article>
 		</section>
 		
 		<section>
 			<article>
-				<h2>Welcome Video</h2>
-				<h3>By Kevin Ward</h3>
-				<p>Click the video below for an in depth look into </p>
+				<h1>Welcome Video</h1>
+				<p>By Kevin Ward</p>
+				<p>Click the video below for a brief look into the world of web design advertising.</p>
+				
+				<video controls poster="cp_poster.png"><!-- Added video and captions on 12/2/2017 -->
+					<source src="vid/welcome.mp4" type="video/mp4" />
+					<source src="vid/welcome.webm" type="video/webm" />
+					<track kind="captions" label="Video Captions" src="vid/welcome.vtt" default /><!-- The caption title of the video is "Welcome to teh Interwebs" and is misspelled as a joke. -->
+					<p><em>You may need to upgrade your browser to an HTML5 compatible browser.</em></p>
+				</video>
 			</article>
 		</section>
 	</main>
