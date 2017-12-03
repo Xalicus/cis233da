@@ -2,9 +2,9 @@
 <html lang="en"><!-- Created page on 11/11/2017 -->
 <head>
 <!--
-Final Project Step 6 - Web Dev Lvl 2
+Final Project Step 7 - Web Dev Lvl 2
 Author:		Kevin Ward
-Date:		11/25/2017
+Date:		12/1/2017
 Filename:	contact.html
 -->
 
@@ -25,15 +25,13 @@ Filename:	contact.html
 	<div id="headimg">
 		<header><!-- Added header, h1 on 11/11/2017 -->
 			<h1><img src="img/logo.png" alt="Xalicus Studios Logo" id="logo" /><!-- Added logo img on 11/11/2017 -->
-			<!-- fix transparancy -->
 			Xalicus Studios Contact Me</h1>
 		
 			<nav><!-- Added all navigation links on 11/11/2017 -->
-				<a id="navicon" href="#"><img src="img/navicon.png" alt="Nav Icon"></a> <!-- Saving for later on.-->
+				<a id="navicon" href="#"><img src="img/navicon.png" alt="Nav Icon"></a>
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="price.html">Pricing</a></li>
-					<li><a href="showcase.html">Showcase</a></li>
+					<li><a href="services.html">Services</a></li> <!-- Merged the prices and showcase pages into the services page. 12/1/2017-->
 					<li><a href="about.html">About Me</a></li>
 					<li><a href="contact.html">Contact Me</a></li>
 				</ul>
@@ -44,43 +42,43 @@ Filename:	contact.html
 	<main><!-- Added main, section, article on 11/11/2017 -->
 		<section>
 			<article>
-				<h2>Random Text for testing.</h2>
+				<h2>Form Title.</h2>
 				
 				<form id="orders" action="#" method="post"><!-- Form and all elements added 11/25/2017 -->
 					
-					<fieldset id="cxorder"><!-- fieldset 11/25/2017 -->
-						<legend>Something Witty and Charming!</legend><!-- legend 11/25/2017 -->
+					<fieldset id="cxorder"><!-- Fieldset groups form elements 11/25/2017 -->
+						<legend>Something Witty and Charming!</legend><!-- Legend to label the fieldset 11/25/2017 -->
 						<div class="rows">
-							<label for="name">First and Last Name*</label><!-- label 11/25/2017 -->
-							<input name="cxName" id="name" type="text" placeholder="First and last name" required><!-- placeholder, required 11/25/2017 -->
+							<label for="name">First and Last Name*</label><!-- Label to tell what each input is 11/25/2017 -->
+							<input name="cxName" id="name" type="text" placeholder="First and last name" required><!-- Input box to put in text, Required to make sure info is added before submission 11/25/2017 -->
 						</div>
 						<div class="rows">
-							<label for="street">Street Address</label><!-- label 11/25/2017 -->
-							<input name="cxStreet" id="street" type="text" placeholder="123 S Pivet Drive">
+							<label for="street">Street Address</label>
+							<input name="cxStreet" id="street" type="text" placeholder="123 S Pivet Drive"><!-- Placeholder for a reminder of what type of info to put in the text box 11/25/2017 -->
 						</div>
 						<div class="rows">
-							<label for="city">City</label><!-- label 11/25/2017 -->
-							<input name="cxCity" id="city" type="text" placeholder="Mesa"><!-- placeholder 11/25/2017 -->
+							<label for="city">City</label>
+							<input name="cxCity" id="city" type="text" placeholder="Mesa">
 						</div>
 						<div class="rows">
-							<label for="state">State</label><!-- label 11/25/2017 -->
-							<input name="cxState" id="state" type="text" placeholder="AZ"><!-- placeholder 11/25/2017 -->
+							<label for="state">State</label>
+							<input name="cxState" id="state" type="text" placeholder="AZ" maxlength="2"><!-- Maxlength so it won't submit with extra characters 11/25/2017 -->
 						</div>
 						<div class="rows">
-							<label for="zip">Zip Code</label><!-- label 11/25/2017 -->
-							<input name="cxZip" id="zip" type="text" placeholder="00000 (-NNNN)"><!-- placeholder 11/25/2017 -->
+							<label for="zip">Zip Code</label>
+							<input name="cxZip" id="zip" type="text" placeholder="00000 (-NNNN)"><!-- Text data type to allow any type of text characters 11/25/2017 -->
 						</div>
 						<div class="rows">
-							<label for="num">Home/Cell Number*</label><!-- label 11/25/2017 -->
-							<input name="cxNum" id="num" type="tel" placeholder="(000) nnn-nnnn" pattern="\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required><!-- placeholder 11/25/2017 -->
+							<label for="num">Home/Cell Number*</label>
+							<input name="cxNum" id="num" type="tel" placeholder="(000) nnn-nnnn" pattern="\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required><!-- Pattern to allow only those characters and nothing else 11/25/2017 -->
 						</div>
 						<div class="rows">
-							<label for="email">Email Address*</label><!-- label 11/25/2017 -->
-							<input name="cxEmail" id="email" type="email" placeholder="username@server.com" required><!-- placeholder 11/25/2017 -->
+							<label for="email">Email Address*</label>
+							<input name="cxEmail" id="email" type="email" placeholder="username@server.com" required><!-- Email data type to allow only email addresses as input 11/25/2017 -->
 						</div>
 						<div class="rows">
 							<label for="hear">How did you hear about this page?
-							<br>(select all that apply here.)</label><!-- label 11/25/2017 -->
+							<br>(select all that apply here.)</label>
 							<select name="cxHear" id="hear" size="7" multiple>
 							<option value="net">Internet</option>
 							<option value="mouth">Word of mouth</option>
@@ -92,14 +90,14 @@ Filename:	contact.html
 							</select>
 						</div>
 						<div class="rows">
-							<label for="int">Tell me a little about your interests.</label><!-- label 11/25/2017 -->
-							<textarea name="cxInt" id="int" placeholder="Interests here."></textarea><!-- placeholder 11/25/2017 -->
+							<label for="int">Tell me a little about your interests.</label>
+							<textarea name="cxInt" id="int" placeholder="Put interests here."></textarea>
 						</div>
 					</fieldset>
 					
 					<div id="subreset">
-						<input type="submit" value="Submit Lifeforce">
-						<input type="reset" value="Cancel">
+						<input type="submit" value="Submit Lifeforce"><!-- Submit button to submit the form 11/25/2017 -->
+						<input type="reset" value="Cancel"><!-- Reset button to reset the form 11/25/2017 -->
 					</div>
 					
 				</form>
@@ -110,7 +108,7 @@ Filename:	contact.html
 	</main>
 	
 	<footer><!-- Added footer on 11/11/2017 -->
-		Kevin Ward &copy; 2017 All Rights Reserved.
+		<img src="img/favicon.png" alt="Footer Icon" id="footicon"> Kevin Ward &copy; 2017 All Rights Reserved.
 	</footer>
 
 </body>

@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 /*
-Final Project Step 6 - Web Dev Lvl 2
+Final Project Step 7 - Web Dev Lvl 2
 Author:		Kevin Ward
-Date:		11/25/2017
+Date:		12/1/2017
 Filename:	styles.css
 */
 
@@ -16,6 +16,7 @@ footer, header, main, nav, section {
 }
 
 /* Added css reset defaults on 11/25/2017 */
+
 address, article, aside, blockquote, body, cite, div, dl, dt, dd, 
 em, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, 
 html, img, li, main, nav, nav a, ol, p, section, span, ul,table, 
@@ -58,6 +59,7 @@ header {
 }
 
 /* Added css header #logo tag on 11/11/2017 */
+
 header #logo {
 	height: 100px;
 	width: 100px;
@@ -109,6 +111,7 @@ section {
 	min-height: 400px;
 	text-align: center;
 	width: 100%;
+	padding: 10px;
 	margin: 3% auto;
 }
 
@@ -123,9 +126,11 @@ h1 {
 }
 
 /* Added css h2, h3 tags on 11/25/2017 */
+
 h2 {
 	font-size: 2em;
 	text-align: center;
+	margin-top: 10px;
 }
 
 h3 {
@@ -134,12 +139,77 @@ h3 {
 }
 
 p {
-	font-size: 0.9em;
-	text-align: left;
+	font-size: 1.2em;
+	text-align: center;
+	margin: 15px;
+}
+
+/* ID and Class Styles. */
+/* Added css .leftex, .rightex, .clear, .flex, .pkg, #container tags on 12/1/2017 */
+
+.leftex {
+	float: left;
+	width: 400px;
+	margin: 20px 30px;
+}
+
+.rightex {
+	float: right;
+	width: 400px;
+	margin: 20px 30px;
+}
+
+.clear {
+	clear: both;
+	text-align: center;
+}
+
+.flex {
+	-webkit-box-flew: auto;
+	flex: auto;
+	
+	width: 200px;
+	margin: 20px;
+}
+
+.pkg {
+	width: 100%;
+	height: auto;
+}
+
+#container {
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	width: 100%;
+	padding: 20px;
+}
+
+/* Image Styles. */
+/* Added css figure, figcaption, img, #kaw tags on 12/1/2017 */
+
+figure {
+	float: left;
+	margin: 10px;
+	padding: 10px;
+}
+
+figcaption {
+	float: center;
+}
+
+img#kaw {
+	height: 384px;
+	width: 512px;
+	margin: 10px;
 }
 
 /* Form and all other tag styles. */
 /* Added css form, fieldset, div, .rows, legend, textarea, input:focus tags on 11/25/2017 */
+
 form#orders {
 	display: -webkit-flex;
 	display: flex;
@@ -149,7 +219,7 @@ form#orders {
 }
 
 form#orders > fieldset {
-	background-color: transparent; /* Fix colors later. */
+	background-color: transparent;
 	border-radius: 25px;
 	
 	-webkit-flex: 1 1 100px;
@@ -213,9 +283,8 @@ input#email:focus:invalid {
 	background: rgb(255, 232, 233);
 }
 
-
 /* Form Button Styles. */
-/* Added css div#subreset, input(submit/reset) tags on 11/4/2017 */
+/* Added css div#subreset, input(submit/reset) tags on 11/25/2017 */
 
 div#subreset {
 	text-align: center;
@@ -228,10 +297,6 @@ input[type='submit'], input[type='reset'] {
 	margin: 15px;
 }
 
-
-
-
-
 /* Footer styles. */
 /* Added css footer, #headimg tags on 11/4/2017 */
 
@@ -243,6 +308,13 @@ footer {
 	opacity: 0.8;
 	width: 100%;
 	padding: 3px 0px;
+}
+
+/* Added css #footicon tag on 12/1/2017 */
+
+#footicon {
+	height: 16px;
+	width: 16px;
 }
 
 #headimg {
@@ -346,27 +418,4 @@ footer {
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
