@@ -117,7 +117,7 @@ section {
 	margin: 3% auto;
 }
 
-section:last-of-type {
+section:last-of-type { /* FR:Pseudo-Element added to the section tag. 11/4/2017 */
 	margin-bottom: 0px;
 }
 
@@ -210,7 +210,7 @@ img#kaw {
 	width: 512px;
 	margin: 10px;
 	box-shadow: rgba(150, 150, 150, 0.9) 2px 2px 7px;
-	border-radius: 20px;
+	border-radius: 20px; /* FR:Rounded Corners for Image to change up the about me page image. 12/1/2017 */
 }
 
 p.orderbut {
@@ -239,6 +239,7 @@ iframe {
 	width: 720px;
 	height: 480px;
 	margin: 20px auto;
+	border: none;
 }
 
 
@@ -360,7 +361,7 @@ footer {
 
 
 /* Mobile styles. */
-/* Added mobile, tablet and desktop styles on 11/25/2017 */
+/* FR:Mobile Query: Added mobile styles on 11/25/2017 */
 
 @media only screen and (max-width: 640px) {
 	
@@ -435,10 +436,10 @@ footer {
 	}
 	
 	p.orderbut {
-		background: url(img/orderbutbg.png) center / cover no-repeat fixed; /* Background image used for my button added 12/2/2017 */
+		background: url(img/orderbutbg.png) center / cover no-repeat fixed; /* FR:Background image used for my button. 12/2/2017 */
 		height: 75px;
 		width: 100px;
-		border: 10px double #808080; /* Border added 12/2/2017 */
+		border: 10px double #808080; /* FR:Border for my order button. 12/2/2017 */
 		border-radius: 25px;
 		color: #DD2FE8;
 		font-size: 1.2em;
@@ -451,6 +452,7 @@ footer {
 		width: 240px;
 		height: 160px;
 		margin: 20px auto;
+		border: none;
 	}
 	
 	img#kaw {
@@ -492,6 +494,7 @@ footer {
 
 
 /* Tablet styles. */
+/* FR:Tablet Query: Added tablet styles on 11/25/2017 */
 
 @media only screen and (min-width: 641px) and (max-width: 800px) {
 	
@@ -550,6 +553,7 @@ footer {
 		width: 480px;
 		height: 320px;
 		margin: 20px auto;
+		border: none;
 	}
 	
 	img#kaw {
@@ -591,6 +595,7 @@ footer {
 
 
 /* Desktop styles. */
+/* FR:Desktop Query: Added desktop styles on 11/25/2017 */
 
 @media only screen and (min-width: 801px) {
 	
@@ -613,6 +618,7 @@ footer {
 		width: 720px;
 		height: 480px;
 		margin: 20px auto;
+		border: none;
 	}
 	
 	blockquote {
