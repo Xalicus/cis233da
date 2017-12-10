@@ -3,9 +3,11 @@
 /*
 Final Project Step 7 - Web Dev Lvl 2
 Author:		Kevin Ward
-Date:		12/1/2017
+Date:		12/7/2017
 Filename:	styles.css
 */
+
+/* All Final Project Rubric comments will say "FR:" in them. */
 
 /* General styles used for all elements. */
 /* Added css block display on 11/25/2017 */
@@ -142,6 +144,7 @@ p {
 	font-size: 1.2em;
 	text-align: center;
 	margin: 15px;
+	text-shadow: rgba(75, 75, 75, 0.9) 1px 1px 5px;
 }
 
 /* ID and Class Styles. */
@@ -192,39 +195,49 @@ p {
 /* Added css figure, figcaption, img, #kaw tags on 12/1/2017 */
 
 figure {
-	float: left;
+	float: right;
 	margin: 10px;
 	padding: 10px;
 }
 
 figcaption {
 	text-align: center;
+	text-shadow: rgba(75, 75, 75, 0.9) 1px 1px 5px;
 }
 
 img#kaw {
 	height: 384px;
 	width: 512px;
 	margin: 10px;
+	box-shadow: rgba(150, 150, 150, 0.9) 2px 2px 7px;
+	border-radius: 20px;
 }
 
 p.orderbut {
 	background: url(img/orderbutbg.png) center / cover no-repeat fixed; /* Background image used for my button added 12/2/2017 */
-	height: 200px;
-	width: 300px;
+	height: 100px;
+	width: 350px;
 	border: 10px double #808080; /* Border added 12/2/2017 */
 	border-radius: 25px;
 	color: #DD2FE8;
-	font-size: 4.8em;
+	font-size: 3.5em;
 	margin: 10px auto;
 	padding: 3px;
 }
 
 /* Video Styles */
-/* Added css video tag on 12/2/2017 */
+/* Added css video and iframe tags on 12/2/2017 */
 
 video {
-	display: block;
+	display: none;
 	width: 80%;
+	margin: 20px auto;
+}
+
+iframe {
+	display: block;
+	width: 720px;
+	height: 480px;
 	margin: 20px auto;
 }
 
@@ -344,8 +357,10 @@ footer {
 	/* The background image was edited from: https://pixabay.com/en/background-circuit-grey-digital-2426328/ */
 }
 
+
+
 /* Mobile styles. */
-/* Added mobile and tablet/desktop styles on 11/25/2017 */
+/* Added mobile, tablet and desktop styles on 11/25/2017 */
 
 @media only screen and (max-width: 640px) {
 	
@@ -419,11 +434,165 @@ footer {
 		font-size: 1.5em;
 	}
 	
+	p.orderbut {
+		background: url(img/orderbutbg.png) center / cover no-repeat fixed; /* Background image used for my button added 12/2/2017 */
+		height: 75px;
+		width: 100px;
+		border: 10px double #808080; /* Border added 12/2/2017 */
+		border-radius: 25px;
+		color: #DD2FE8;
+		font-size: 1.2em;
+		margin: 10px auto;
+		padding: 3px;
+	}
+	
+	iframe {
+		display: block;
+		width: 240px;
+		height: 160px;
+		margin: 20px auto;
+	}
+	
+	img#kaw {
+		height: 128px;
+		width: 170px;
+		margin: 10px;
+		box-shadow: rgba(150, 150, 150, 0.9) 2px 2px 7px;
+		border-radius: 20px;
+	}
+	
+	blockquote {
+		background: url(img/transblack.png) center / cover no-repeat;
+		width: 85%;
+		margin: 10px auto;
+		padding: 3px;
+		text-align: justify;
+		font-size: 0.8em;
+	}
+	
+	table {
+		border: 3px solid;
+		margin: 5px auto;
+		width: 95%;
+	}
+	
+	th {
+		border: 2px solid;
+		margin: 2px;
+		padding: 2px 5px;
+	}
+	
+	td {
+		border: 2px dotted;
+		margin: 2px;
+		padding: 3px;
+	}
 }
 
-/* Tablet and Desktop styles. */
 
-@media only screen and (min-width: 641px) {
+
+/* Tablet styles. */
+
+@media only screen and (min-width: 641px) and (max-width: 800px) {
+	
+	a#navicon {
+		display: block;
+	}
+	
+	nav {
+		padding-bottom: 5px;
+	}
+	
+	nav ul {
+		display: none;
+	}
+	
+	nav ul li {
+		font-size: 0.5em;
+		line-height: 1em;
+		height: 0.9em;
+	}
+	
+	a#navicon:hover+ul, nav ul:hover {
+		display: block;
+	}
+	
+	section h1 {
+		font-size: 2em;
+	}
+	
+	section h2 {
+		font-size: 1.7em;
+	}
+	
+	section h3 {
+		font-size: 1.3em;
+	}
+	
+	section p {
+		font-size: 1em;
+	}
+	
+	p.orderbut {
+		background: url(img/orderbutbg.png) center / cover no-repeat fixed; /* Background image used for my button added 12/2/2017 */
+		height: 110px;
+		width: 150px;
+		border: 10px double #808080; /* Border added 12/2/2017 */
+		border-radius: 25px;
+		color: #DD2FE8;
+		font-size: 2em;
+		margin: 10px auto;
+		padding: 3px;
+	}
+	
+	iframe {
+		display: block;
+		width: 480px;
+		height: 320px;
+		margin: 20px auto;
+	}
+	
+	img#kaw {
+		height: 384px;
+		width: 512px;
+		margin: 10px;
+		box-shadow: rgba(150, 150, 150, 0.9) 2px 2px 7px;
+		border-radius: 20px;
+	}
+	
+	blockquote {
+		background: url(img/transblack.png) center / cover no-repeat;
+		width: 85%;
+		margin: 10px auto;
+		padding: 3px;
+		text-align: justify;
+		font-size: 0.9em;
+	}
+	
+	table {
+		border: 3px solid;
+		margin: 5px auto;
+		width: 95%;
+	}
+	
+	th {
+		border: 2px solid;
+		margin: 2px;
+		padding: 2px 5px;
+	}
+	
+	td {
+		border: 2px dotted;
+		margin: 2px;
+		padding: 3px;
+	}
+}
+
+
+
+/* Desktop styles. */
+
+@media only screen and (min-width: 801px) {
 	
 	body nav ul {
 		display: -webkit-flex;
@@ -439,5 +608,38 @@ footer {
 		flex: 0 1 auto;
 	}
 	
+	iframe {
+		display: block;
+		width: 720px;
+		height: 480px;
+		margin: 20px auto;
+	}
+	
+	blockquote {
+		background: url(img/transblack.png) center / cover no-repeat;
+		width: 85%;
+		margin: 10px auto;
+		padding: 3px;
+		text-align: justify;
+		font-size: 0.9em;
+	}
+	
+	table {
+		border: 3px solid;
+		margin: 5px auto;
+		width: 95%;
+	}
+	
+	th {
+		border: 2px solid;
+		margin: 2px;
+		padding: 2px 5px;
+	}
+	
+	td {
+		border: 2px dotted;
+		margin: 2px;
+		padding: 3px;
+	}
 }
 
